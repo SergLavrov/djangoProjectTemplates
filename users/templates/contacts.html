@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{ header }}</h1>
+
+<table border="2">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Phone</th>
+    </tr>
+</thead>
+<tbody>
+    {% for user in users %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.phone }}</td>
+            <td>
+                <a href="http://127.0.0.1:8000/">ссылка</a>
+            </td>
+        </tr>
+    {% endfor %}
+</tbody>
+</table>
+</body>
+</html>
